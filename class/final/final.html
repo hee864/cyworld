@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <div class="wrapper__inside">
+                <div class="title">코드캠프 회원가입</div>
+            
+                <input type="text"  class="container"  id="email" placeholder="이메일을 입력해주세요">
+                <div class="emailError"></div>
+                
+                <input type="text"  class="container"  id="name" placeholder="이름을 입력해주세요">
+                <div class="nameError"></div>
+                
+                <input type="text"  class="container"  id="password" placeholder="비밀번호를 입력해주세요">
+                <div class="passwordError"></div>
+                
+                <input type="text"  class="container"  id="passwordCheck" placeholder="비밀번호를 다시 입력해주세요"> 
+                <div class="passwordCheckError"></div>   
+                     
+            
+                <div class="phoneContainer">
+                    <input type="text" class="phoneBox" id="p1" oninput="changeFocus1()" maxlength="3">-
+                    <input type="text" class="phoneBox" id="p2" oninput="changeFocus2()" maxlength="4">-
+                    <input type="text" class="phoneBox" id="p3" oninput="changeFocus3()"maxlength="4">
+                </div>
+                
+                
+                    <div class="sendNumber">
+                        <div class="target"  id="target">000000</div>
+                        <button class="number"  onclick="auth()" disabled id="sendMessage"  >인증번호 전송</button>
+                    </div>
+                
+                    <div class="timer">
+                        <div class="timerNum" id="timer">3:00</div>
+                        <button class="check"  onclick="checkComplete()" disabled id="complete">인증확인</button>
+                    </div>
+                
+               
+                   
+                <select id="area" class="container">
+                        <option disabled="true" selected="true">
+                            지역을 선택하세요
+                        </option>
+                        <option>서울</option>
+                        <option>경기</option>
+                        <option>인천</option>
+                </select>
+                <div id="areaError" class="error"></div>
+                
+                <div class="gender">
+                    <input type="radio" name="gender" id="gender_woman">여성
+                    <input type="radio" name="gender" id="gender_man">남성
+                    <div id="genderError"></div>
+                </div>
+                <div class="divideLine"></div>
+                
+                <button id="signUp" class="signContainer" disabled onclick="signupCheck()">
+                    가입하기</button>
+        
+            </div>
+            
+
+           
+        </div>
+    </body>
+    </div>
+   
+</html>

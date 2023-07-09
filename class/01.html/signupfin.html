@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입</title>
+    <link href="./signupfin.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="main">
+            <div class="group1">
+
+                <div class="title">
+                    회원가입을 위해<br>정보를 입력해주세요
+                </div>
+
+                <div class="email-container">
+                    <div class="info">* 이메일</div>
+                    <input type="text" class="underlineInput">
+                </div>
+
+                <div class="name-container">
+                    <div class="info">* 이름</div>
+                    <input type="text" class="underlineInput">
+                </div>
+
+                <div class="password-container">
+                    <div class="info">* 비밀번호</div>
+                    <input type="password" class="underlineInput">
+                </div>
+
+                <div class="recheck-container">
+                    <div class="info">* 비밀번호 확인</div>
+                    <input type="password" class="underlineInput">
+                </div>
+
+                <div class="gender-container">
+                    <div class="gender">
+                        <input type="radio" class="gender-button" name="gender" id="female">
+                        <label for="female" class="gender-text">
+                            <span class="custom-radio"></span>
+                            여성
+                        </label>
+                    </div>
+                
+                    <div class="gender">
+                        <input type="radio" class="gender-button" name="gender" id="male">
+                        <label for="male" class="gender-text">
+                            <span class="custom-radio"></span>
+                            남성
+                        </label>
+                    </div>
+                </div>
+
+                <div class="agreement-container">
+                    <input type="checkbox" class="agreement-checkbox" id="agreement">
+                    <label for="agreement" class="agreement-text">이용약관 개인정보 수집 및 마케팅 활용 선택에 모두 동의합니다.</label>
+                </div>
+
+                <hr class="line">
+                <button class="register">가입하기</button>
+            </div>
+        </div>
+</body>
+
+</html>

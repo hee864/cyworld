@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;
+    /* outerbox에 내부 여백을 주는 것;:위부터 시작해서 시계방향으로 */
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image:url("../images/outerbox.png");
+    /* style folder를 벗어나기 위해 점을 2개 입력*/
+} 
+
+.wrapper{ 
+    display: flex;
+    flex-direction: row;/*수평으로 right와 left가 위치함*/
+    padding: 32px 0px 0px 32px;
+    /*wrapper 내부에 right와 left를 정확한 위치에 놓기*/
+
+}
+.wrapper__left{
+    width:208px;
+    height: 472px;
+   
+    display: flex;
+    flex-direction: column;
+    /*left의 header와 body를 수직으로 정렬*/
+}
+.wrapper__left__header{
+    width: 100%;
+    height: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.today{
+    font-size: 9px;
+}
+.wrapper__left__body{
+    width:100%;
+    height: 100%;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;/*수직으로 정렬 후 가운데 정렬 */
+    align-items: center;
+    
+    padding: 20px 30px;
+}
+.left__body__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+}
+.left__body__header__line{
+    border-top: 1px dotted black;
+    /*위쪽 테두리만 나타냄*/
+    margin: 12px 0px;
+    /*상하 , 좌우 여백 입력*/
+}
+.left__body__profile{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+.left__body__footer{
+    width:100%;
+
+    
+    
+}
+.wrapper__feel{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 100%지정했기 때문에 left body의 가로 사이즈를 지정할수있음 */
+}
+.feel__title{
+    color:gray;
+    font-size: 11px;
+    margin-bottom:5px;
+}
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   /* 끝단을 맞춰준다 */
+   padding-left:5px;
+
+}
+.wrapper__right__header{
+    width:510px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* 양쪽 끝으로 찢어주는 것 */
+    padding: 0px 14px;
+    align-items: flex-end;
+}
+.right__header__title,.right__header__setting{
+    color:#55B2D4;
+    font-size:9px;
+}
+.right__header__title{
+    font-size:16px;
+}
+.wrapper__right__body{
+    width: 510px;
+    height:445px;
+    border:1px solid gray;
+    border-radius:15px;
+    background-color:white;
+}
+iframe{
+    width:100%;
+    height: 100%;
+    border:none;
+}
+.navigation{
+    width: 62px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left:774px;
+    top:110px;
+    
+}
+.navigation__item{
+    width: 60px;
+    height: 30px;
+    background-color: #298eb5;
+    border: 1px solid black;
+    color:white;
+    border-radius: 0px 10px 10px 0px;
+    font-size:10px;
+    text-align: center;
+    line-height: 30px;
+    /* 글씨들이 써져있는 줄 높이 조절 */
+    cursor: pointer;
+    /* 마우스를 위에 올리면 손모양으로 됨 */
+}

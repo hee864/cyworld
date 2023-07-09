@@ -1,0 +1,133 @@
+.background{
+   
+flex-shrink: 0;
+background: #FFF;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+height: 100vh;
+}
+.border{
+width: 670px;
+height: 960px;
+flex-shrink: 0;
+border-radius: 20px;
+border: 1px solid #AACDFF;
+background: #FFF;
+box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+padding:72px 104px 70px 100px;  
+    
+}
+.group{
+    width: 100%;
+    height:100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:space-around ;
+    justify-content: space-around;
+}
+.info{
+    display: flex;
+    width: 466px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #0068FF;
+    font-size: 32px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.underlineInput{
+    font-size: 16px;
+    width: 466px;
+    flex-shrink: 0;
+    border: none;
+    border-bottom: 1px solid #CFCFCF;
+    outline:none;
+}
+.email{
+    display: flex;
+    width: 158px;
+    height: 23.649px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #797979;
+    font-size: 16px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.name{
+    display: flex;
+    width: 158px;
+    height: 23.649px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #797979;
+    font-size: 16px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pw{
+    display: flex;
+    width: 158px;
+    height: 23.649px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #797979;
+    font-size: 16px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pwcf{
+    display: flex;
+    width: 158px;
+    height: 23.649px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #797979;
+    font-size: 16px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.agreeLine{
+    width:470px;
+    height:0.998px;
+    flex-shrink: 0;
+    background-color:#E6E6E6;
+}
+.gender{
+    padding-left:265px;
+}
+.box{
+    width: 470px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #0068FF;
+    background: #FFF;
+}
+.sign{
+    display: flex;
+    width: 70px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #0068FF;
+    text-align: center;
+    font-size: 18px;
+    font-family: Noto Sans CJK KR;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
