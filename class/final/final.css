@@ -50,17 +50,26 @@ html,body{
     margin-bottom:60px;
 }
 .container{
+    width: 380px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 1px solid #D8D7D8;
+    background: #FFF;
+    text-align: space-around;
+}
+.container:focus{
    
-width: 380px;
-height: 60px;
-flex-shrink: 0;
-border-radius: 7px;
-border: 1px solid #0068FF;
-background: #FFF;
-text-align: space-around;
+
+    border: 1px solid #0068FF;
 
 
 }
+.error{
+    font-size:8px;
+    color:red;
+}
+
 .phoneContainer{
     
     display:flex;
@@ -72,6 +81,7 @@ text-align: space-around;
     width:100px;
     height:40px;
     border-radius:5px;
+    cursor:pointer;
 }
 
 .sendNumber{
@@ -86,7 +96,8 @@ text-align: space-around;
     color:#0068FF;
     font-size: 18px;
     font-weight: 400;
-}       
+} 
+
 .number{
     color:#0068FF;
     width: 120px;
@@ -94,6 +105,13 @@ text-align: space-around;
     border-radius: 5px;
     margin-left:21px;
 }
+.number:disabled{
+background-color: #FBFAFB;
+color:#D8D7D8;
+border:1px solid #D8D7D8;
+}
+
+
 .timer{
     display: flex;
     flex-direction: row;
@@ -116,6 +134,11 @@ text-align: space-around;
     font-weight: 400;
     margin-left:21px;
 }
+.check:disabled{
+    background-color: #FBFAFB;
+    color:#D8D7D8;
+    border:1px solid #D8D7D8;
+}
 .gender{
     width:100%;
     text-align: center;
@@ -131,10 +154,13 @@ text-align: space-around;
     height: 75px;
     flex-shrink: 0;
     border-radius: 10px;
-    border:1px solid #0068FF;
+    border:1px solid #D8D7D8;
     background-color: #FFF;
     font-size:18px;
     font-weight: 400;
+    
+}
+.signContainer:focus{
+    border: 1px solid #0068FF;
     color:#0068FF;
-
 }
